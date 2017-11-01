@@ -39,7 +39,7 @@ $(".forecast").empty();
     for(let i=0; i<6; i++) {
 
     let markup = "<div class='col-sm-2'>";
-    markup += "<h3>" + icon(response.daily.data[i]) + "</h3>"
+    markup += "<h3>" + icon(response.daily.data[i]) + "</h3>";
     markup += "<h4>" + Math.round(response.daily.data[i].temperatureHigh) + " | " + Math.round(response.daily.data[i].temperatureLow) + "</h4>";
     markup += "<h5>" + response.daily.data[i].summary + "</h5></div>";
 
